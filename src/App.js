@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Criteria from "./Components/Criteria";
+import FAQ from "./Components/FAQ";
+import Footer from "./Components/Footer";
+import Homebanner from "./Components/Homebanner";
+import Introduction from "./Components/Introduction";
+import Navbar from "./Components/Navbar";
+import Partner from "./Components/Partner";
+import Privacy from "./Components/Privacy";
+import Reward from "./Components/Reward";
+import Rules from "./Components/Rules";
+import Timeline from "./Components/Timeline";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-secColor">
+         <Navbar />
+         <Homebanner />
+         <Introduction />
+         <Rules/>
+         <Criteria/>
+         <FAQ />
+         <Timeline />
+         <Reward />
+         <Partner />
+         <Privacy />
+         <Footer />
     </div>
   );
 }
